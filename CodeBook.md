@@ -44,7 +44,7 @@ Note: In the final tidy data set all "-" are replaced by "." and all "()" are el
 
 ##Data Processing
 
-The script [_run\_analysis.R_]( ds-project-3/run_analysis.R) is used to processes the data. It ...
+The script _run\_analysis.R_ is used to processes the data. It ...
 
 * merges the training and the test sets to create one data set,
 * extracts only the measurements on the mean and standard deviation for each measurement, 
@@ -61,7 +61,7 @@ The following transformations are performed by the script:
 4. The mean of each feature for each subject and each activity is calculated and the results stored in a tidy data frame, that contains the mean value for each of the 66 features for each of the subject/activity combinations. There are 6 activities for each of the 30 subjects giving a total of 180 rows
 5. The tidy data frame is saved to a file, named "tidydata.txt".
 
-tidydata.txt has 180 rows containing the calculated mean values and 68 columns containing the variables. It meets the following principles:
+_tidydata.txt_ has 180 rows containing the calculated mean values and 68 columns containing the variables. It meets the following principles:
 * The column headings are explicit
 * There is one column for each variable
 * There are no duplicate columns

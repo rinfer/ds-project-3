@@ -31,7 +31,7 @@ The script does not make use of functions. So you will have to click manually th
 
 The script's output is a tidy data file named "tidydata.txt", which meets the requirements of the class project.
 
-See for more information on the data and the their processing the [CodeBook.md](ds-project-3/CodeBook.md) file.
+See for more information on the data and the their processing the _CodeBook.md_ file.
 
 References:
 
