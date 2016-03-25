@@ -107,7 +107,7 @@ names(tidywide) <- gsub("\\(\\)", "", names(tidywide))
 
 
 #Writing the tidy data set to a file
-write.csv(tidywide, "./ds-project-3-data/tidydata.csv", row.names=FALSE)
+write.table(tidywide, "./ds-project-3-data/tidydata.txt", row.names = FALSE)
 
-#Reading tidydata.csv back into R for control
-tidyfile <- read.csv("./ds-project-3-data/tidydata.csv")
+#Reading tidydata.txt back into R for control
+tidyfile <- read.table("./ds-project-3-data/tidydata.txt", header = TRUE)
