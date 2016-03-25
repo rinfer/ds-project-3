@@ -5,7 +5,7 @@ This is the code book for the Data Science Specialization class project for the 
 ##Overview
 This project uses a data set from the "Human Activity Recognition Using Smartphones Data Set".  The data set contains measurements of the accelerometers from the Samsung Galaxy S smartphone. The measurements were captured from 30 volunteers on 6 different activities. Their smartphone captured various data about their movements.
 
-A detailed description of the data and the method of collecting and processing is given on the website of the [research project](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), which also provides the data:
+A detailed description of the data and the method of collecting and processing is given on the website of the [research project](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 
 ##Original files
@@ -40,11 +40,11 @@ The following feature variables are extracted from the original dataset and comb
 
 tBodyAcc-mean()-Y | tBodyAcc-std()-Y | tGravityAcc-mean()-Y | tGravityAcc-std()-Y | tBodyAccJerk-mean()-Y | tBodyAccJerk-std()-Y | tBodyGyro-mean()-Y | tBodyGyro-std()-Y | tBodyGyroJerk-mean()-Y | tBodyGyroJerk-std()-Y | tBodyAccMag-std() | tBodyAccJerkMag-mean() | tBodyGyroMag-std() | fBodyAcc-mean()-X | fBodyAcc-std()-X | fBodyAccJerk-mean()-X | fBodyAccJerk-std()-X | fBodyGyro-mean()-X | fBodyGyro-std()-X | fBodyAccMag-mean() | fBodyBodyAccJerkMag-std() | fBodyBodyGyroJerkMag-mean() | tBodyAcc-mean()-Z | tBodyAcc-std()-Z | tGravityAcc-mean()-Z | tGravityAcc-std()-Z | tBodyAccJerk-mean()-Z | tBodyAccJerk-std()-Z | tBodyGyro-mean()-Z | tBodyGyro-std()-Z |tBodyGyroJerk-mean()-Z | tBodyGyroJerk-std()-Z | tGravityAccMag-mean() |tBodyAccJerkMag-std() | tBodyGyroJerkMag-mean() | fBodyAcc-mean()-Y | fBodyAcc-std()-Y | fBodyAccJerk-mean()-Y | fBodyAccJerk-std()-Y | fBodyGyro-mean()-Y | fBodyGyro-std()-Y | fBodyAccMag-std() | fBodyBodyGyroMag-mean() | fBodyBodyGyroJerkMag-std() | tBodyAcc-mean()-X | tBodyAcc-std()-X| tGravityAcc-mean()-X | tGravityAcc-std()-X | tBodyAccJerk-mean()-X | tBodyAccJerk-std()-X | tBodyGyro-mean()-X | tBodyGyro-std()-X | tBodyGyroJerk-mean()-X | tBodyGyroJerk-std()-X | tBodyAccMag-mean() | tGravityAccMag-std() | tBodyGyroMag-mean() | tBodyGyroJerkMag-std() | fBodyAcc-mean()-Z | fBodyAcc-std()-Z | fBodyAccJerk-mean()-Z | fBodyAccJerk-std()-Z | fBodyGyro-mean()-Z | fBodyGyro-std()-Z | fBodyBodyAccJerkMag-mean() | fBodyBodyGyroMag-std()
 
-Note: In the final tidy data set all "-" are replaced by "." and all "() are eliminated in these variable names. 
+Note: In the final tidy data set all "-" are replaced by "." and all "()" are eliminated in these variable names. 
 
 ##Data Processing
 
-The script run\_analysis.R is used to processes the data. It ...
+The script [_run\_analysis.R_]( ds-project-3/run_analysis.R) is used to processes the data. It ...
 
 * merges the training and the test sets to create one data set,
 * extracts only the measurements on the mean and standard deviation for each measurement, 
@@ -59,9 +59,9 @@ The following transformations are performed by the script:
 2. Only the 66 feature columns are kept that contain the exact string "mean()" or "std()". All other feature columnes are removed
 3. The activity and subjectID columns are converted from integer to factor, assigning descriptive lables to the activites
 4. The mean of each feature for each subject and each activity is calculated and the results stored in a tidy data frame, that contains the mean value for each of the 66 features for each of the subject/activity combinations. There are 6 activities for each of the 30 subjects giving a total of 180 rows
-5. The tidy data frame is saved to a CSV file, named "tidydata.csv".
+5. The tidy data frame is saved to a file, named "tidydata.txt".
 
-tidydata.csv has 180 rows containing the calculated mean values and 68 columns containing the variables. It meets the following principle:
+tidydata.txt has 180 rows containing the calculated mean values and 68 columns containing the variables. It meets the following principles:
 * The column headings are explicit
 * There is one column for each variable
 * There are no duplicate columns
